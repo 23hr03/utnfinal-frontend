@@ -1,0 +1,89 @@
+.login-wrapper {
+    width: 100%;
+    min-height: 100vh;
+  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+    background: radial-gradient(circle at top, #1e1b4b, #020617);
+  }
+  
+  /* Card */
+  .login-card-dark {
+    width: 380px;
+    padding: 40px 35px;
+    background: rgba(2, 6, 23, 0.95);
+    border-radius: 16px;
+    box-shadow:
+      0 0 0 1px rgba(99,102,241,0.2),
+      0 0 40px rgba(99,102,241,0.25);
+    color: white;
+  }
+  
+  .login-card-dark h2 {
+    margin-bottom: 6px;
+    font-size: 26px;
+  }
+  
+  .subtitle {
+    font-size: 14px;
+    color: #a1a1aa;
+    margin-bottom: 30px;
+  }
+  
+  /* Inputs */
+  .input-box {
+    position: relative;
+    margin-bottom: 26px;
+  }
+  
+  .input-box input {
+    width: 100%;
+    padding: 14px 12px;
+    background: transparent;
+    border: 1px solid #27272a;
+    border-radius: 8px;
+    color: white;
+    outline: none;
+  }
+  
+  .input-box label {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(2, 6, 23, 0.95);
+    padding: 0 6px;
+    color: #71717a;
+    font-size: 13px;
+    pointer-events: none;
+    transition: 0.3s;
+  }
+  
+  .input-box input:focus + label,
+  .input-box input:not(:placeholder-shown) + label {
+    top: -8px;
+    font-size: 11px;
+    color: #818cf8;
+  }
+  
+  button {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #6366f1, #8b5cf6);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+  }
+  .error-msg {
+    margin: 12px 0;
+    color: #ff4d4f;
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+  }
+  
+  

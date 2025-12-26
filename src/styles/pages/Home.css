@@ -1,0 +1,121 @@
+/* =========================
+   CONTENEDOR GENERAL
+========================= */
+.home-container {
+    padding: 36px 40px;
+    color: #ffffff;
+    width: 100%;
+  
+    /* 👇 CENTRADO DEL CONTENIDO */
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* =========================
+     HERO
+  ========================= */
+  .home-hero {
+    background: linear-gradient(180deg, #151a3d, #0b0f2b);
+    border-radius: 22px;
+    padding: 36px;
+    box-shadow: 0 18px 45px rgba(0,0,0,.35);
+    margin-bottom: 36px;
+  }
+  
+  .home-hero h1 {
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 10px;
+  }
+  
+  .home-hero p {
+    font-size: 16px;
+    opacity: .75;
+  }
+  
+  /* =========================
+     MÉTRICAS
+  ========================= */
+  .home-stats {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+    gap: 28px;
+    margin-bottom: 44px;
+  }
+  
+  .stat-card {
+    background: linear-gradient(180deg, #151a3d, #0b0f2b);
+    border-radius: 20px;
+    padding: 22px;
+    box-shadow: 0 18px 45px rgba(0,0,0,.35);
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  
+  .stat-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 28px 70px rgba(0,0,0,.5);
+  }
+  
+  .stat-card h3 {
+    font-size: 14px;
+    opacity: .7;
+    margin-bottom: 12px;
+  }
+  
+  .stat-card span {
+    font-size: 26px;
+    font-weight: 800;
+    color: #9b8cff;
+  }
+  
+  /* =========================
+     ACCESOS RÁPIDOS
+  ========================= */
+  .home-actions h2 {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 22px;
+  }
+  
+  .actions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+    gap: 28px;
+  }
+  
+  /* Card acceso */
+  .action-card {
+    background: linear-gradient(180deg, #151a3d, #0b0f2b);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 18px 45px rgba(0,0,0,.35);
+    text-decoration: none;
+    color: #fff;
+    transition: transform .25s ease, box-shadow .25s ease;
+  }
+  
+  .action-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 28px 70px rgba(0,0,0,.5);
+  }
+  
+  .action-card h4 {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+  
+  .action-card p {
+    font-size: 14px;
+    opacity: .7;
+  }
+  
+  /* =========================
+     RESPONSIVE
+  ========================= */
+  @media (max-width: 720px) {
+    .home-container {
+      padding: 24px 18px;
+    }
+  }
+  
